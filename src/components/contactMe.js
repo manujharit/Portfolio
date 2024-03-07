@@ -1,23 +1,14 @@
-import backImg from "../../assets/backImg.svg";
-import linkedIn from "../../assets/linkedIn.png";
 
 const ContactMe = () => {
   const divStyle = {
-    // background: `linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(${backImg})`,
-    height: "100vh",
+    height: "60vh",
     width: "100%",
     padding: "7%",
   };
-  const handleClick = (icon) => {
-    event.preventDefault()
-    switch(icon) {
-      case 'LinkedIn': window.open(`www.linkedin.com/in/manuj-haritwal`,'_blank')
-    }
-  }
   return (
     <div id="contact">
       <div
-        className="d-flex align-items-center justify-content-center"
+        className="d-flex justify-content-center"
         style={divStyle}
       >
         <div className="text-center">
@@ -51,18 +42,34 @@ const ContactMe = () => {
           </p>
           <br />
           <br />
-          <div className="row">
-            <div className="col-md-6 text-start align-items-start">
-              <div
-                className="card"
-                style={{
-                  background: `url(${linkedIn})`,
-                  backgroundSize: 'cover',
-                  height:"10vh",
-                  width:"10vh",
-                  cursor: "pointer" 
-                }} onClick={handleClick('LinkedIn')}
-              ></div>
+          <div class="container">
+            <div class="row">
+
+              <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
+                <a href="https://www.linkedin.com/in/manuj-haritwal" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <i class="fab fa-linkedin me-10"></i>
+                </a>
+              </div>
+              <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
+                <a href="mailto:manuj.haritwal01@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-danger">
+                  <i class="fas fa-envelope me-10"></i>
+                </a>
+              </div>
+              <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
+                <a href="https://github.com/manujharit" target="_blank" rel="noopener noreferrer" class="btn btn-dark">
+                  <i class="fab fa-github me-10"></i>
+                </a>
+              </div>
+              <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
+                <a href="https://twitter.com/ManujHarit" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                  <i class="fab fa-twitter me-10"></i>
+                </a>
+              </div>
+              <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
+                <a href="https://www.instagram.com/manuj_haritwal" target="_blank" rel="noopener noreferrer" class="btn btn-info">
+                  <i class="fab fa-instagram me-10"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>

@@ -49,7 +49,24 @@ const WorkEx = () => {
           <br />
           <br />
           <div className="row justify-content-center">
-            <div className="col-md-4 mb-4">
+            <div className="col-md-3 mb-2">
+              <h5
+                className="card-title"
+                style={{ fontWeight: "800", fontSize: "120%", color: '#7843e9' }}
+              >
+                Senior Systems Engineer
+              </h5>
+              <p
+                className="card-text"
+                style={{ fontWeight: "700", fontSize: "100%" }}
+              >
+                Infosys Limited
+                <br />
+                Oct, 2022 - Present
+                <br />
+              </p>
+            </div>
+            <div className="col-md-8 mb-5">
               <div
                 className="card"
                 style={{
@@ -58,47 +75,120 @@ const WorkEx = () => {
                 }}
               >
                 <div className="card-body">
-                  <h5
-                    className="card-title"
-                    style={{ fontWeight: "800", fontSize: "125%" , color: '#7843e9'}}
-                  >
-                    Senior Systems Engineer
-                  </h5>
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "700", fontSize: "100%" }}
-                  >
-                    Infosys Limited
-                  </p>
+
                   <p
                     className="card-text"
                     style={{ fontWeight: "500", fontSize: "80%" }}
                   >
-                    Oct, 2022 - Present
-                  </p>
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "500", fontSize: "80%" }}
-                  >
-                    In my role, I orchestrated the development of an Azure
-                    function, seamlessly updating Workplace by Facebook profiles
-                    upon receiving Service Bus messages. Simultaneously, I
-                    crafted a highly efficient web application, streamlining
-                    ticket analysis for the client's team, resulting in a 75%
-                    time savings. Through the delivery of effective solutions
-                    and enhancements, I achieved an impressive 80% reduction in
-                    anomalies across client applications. To ensure continuous
-                    monitoring and rapid response, I implemented various
-                    dashboards and alerts, contributing to the tracking of
-                    health metrics and immediate remedial actions as needed.
-                    Additionally, I provided indispensable post-production
-                    support by maintaining diverse microservices vital for the
-                    optimal functioning of client applications.
+                    <ul>
+                      <li>
+                        Developed an Azure function that updates all users' Workplace by Facebook profiles when it receives a Service Bus message.
+                      </li>
+                      <li>
+                        Developed a web application that helps the client's team address application tickets more quickly by saving 75% of the analysis time.
+                      </li>
+                      <li>
+                        Delivered effective solutions and enhancements to decrease multiple issues in client applications, resulting in an 80% reduction in anomalies.
+                      </li>
+                      <li>
+                        Developed various dashboards and alerts to detect anomalies in apps in order to track the health metrics of multiple services and where necessary, implement immediate remedial action.
+                      </li>
+                      <li>
+                        Maintained various microservices and provided post-production support for a variety of client applications.
+                      </li>
+                    </ul>
+                    <p>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Javascript
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Node.js
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        ReactJS
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Redux
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Redis Cache
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Java
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        MySQL
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Azure (beginner)
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        MongoDB
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        SCRUM
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Service Bus
+                      </span>
+                    </p>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-md-3 mb-2">
+              <h5
+                className="card-title"
+                style={{ fontWeight: "800", fontSize: "120%", color: '#7843e9' }}
+              >
+                Systems Engineer
+              </h5>
+              <p
+                className="card-text"
+                style={{ fontWeight: "700", fontSize: "100%" }}
+              >
+                Infosys Limited
+                <br />
+                Jul, 2021 - Oct, 2022
+                <br />
+              </p>
+            </div>
+            <div className="col-md-8 mb-5">
               <div
                 className="card"
                 style={{
@@ -107,40 +197,69 @@ const WorkEx = () => {
                 }}
               >
                 <div className="card-body">
-                  <h5
-                    className="card-title"
-                    style={{ fontWeight: "800", fontSize: "125%", color: '#7843e9' }}
-                  >
-                    Systems Engineer
-                  </h5>
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "700", fontSize: "100%" }}
-                  >
-                    Infosys Limited
-                  </p>
+
                   <p
                     className="card-text"
                     style={{ fontWeight: "500", fontSize: "80%" }}
                   >
-                    July, 2021 - Sep, 2022
-                  </p>
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "500", fontSize: "80%" }}
-                  >
-                    As a key contributor within a collaborative horizontal team,
-                    I took charge of maintaining and supporting multiple
-                    microservices post-production for our client. My
-                    responsibilities extended to developing software
-                    enhancements geared towards precision in failure tracking,
-                    where the incorporation of relevant response codes led to a
-                    significant 80% reduction in undefined errors.
+                    <ul>
+                      <li>
+                        Investigated and developed software enhancements for the applications to accurately track failures with the relevant response codes that reduced the undefined errors by 60%.
+                      </li>
+                      <li>
+                        Maintained multiple microservices and provided post-production support as part of a horizontal team for the client.
+                      </li>
+                    </ul>
+                    <p>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Javascript
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Node.js
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        ReactJS
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Azure (beginner)
+                      </span>
+                    </p>
                   </p>
                 </div>
               </div>
             </div>
-            <div className="col-md-4 mb-4">
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-md-3 mb-2">
+              <h5
+                className="card-title"
+                style={{ fontWeight: "800", fontSize: "120%", color: '#7843e9' }}
+              >
+                Systems Engineer Trainee
+              </h5>
+              <p
+                className="card-text"
+                style={{ fontWeight: "700", fontSize: "100%" }}
+              >
+                Infosys Limited
+                <br />
+                Oct, 2022 - Present
+                <br />
+              </p>
+            </div>
+            <div className="col-md-8 mb-5">
               <div
                 className="card"
                 style={{
@@ -149,38 +268,58 @@ const WorkEx = () => {
                 }}
               >
                 <div className="card-body">
-                  <h5
-                    className="card-title"
-                    style={{ fontWeight: "800", fontSize: "125%", color: '#7843e9' }}
-                  >
-                    Systems Engineer Trainee
-                  </h5>
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "700", fontSize: "100%" }}
-                  >
-                    Infosys Limited
-                  </p>
+
                   <p
                     className="card-text"
                     style={{ fontWeight: "500", fontSize: "80%" }}
                   >
-                    Feb, 2021 - May, 2021
-                  </p>
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "500", fontSize: "80%" }}
-                  >
-                    Attained advanced proficiency in Spring Boot, Java, HTML,
-                    CSS, Bootstrap, JavaScript, and ReactJS through structured
-                    training and hands-on projects. Led a dynamic six-member
-                    team in the development of a successful internship project,
-                    skillfully distributing tasks and enforcing Agile
-                    methodology principles for efficient collaboration.
-                    Demonstrated expertise spans Java, MySQL, Spring Boot
-                    Application, JavaScript, and ReactJS, reflecting a versatile
-                    skill set and leadership acumen in web development and
-                    project management.
+                    <ul>
+                      <li>
+                        Trained on Spring Boot using Java, HTML, CSS, Bootstrap, JavaScript, ReactJS with some guided projects.
+                      </li>
+                      <li>
+                        Developed an internship project with a group of six people, and guided the group by distributing tasks and enforcing correct Agile methodology principles.
+                      </li>
+                    </ul>
+                    <p>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Javascript
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Springboot Application
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        ReactJS
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        Java
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        MySQL
+                      </span>
+                      <span
+                        className="badge text-light me-2 mb-2"
+                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                      >
+                        SCRUM
+                      </span>
+                    </p>
+
                   </p>
                 </div>
               </div>

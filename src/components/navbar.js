@@ -29,22 +29,22 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <Link to="home" smooth={true} duration={1000} className="nav-link">
+              <Link to="home" smooth={true} duration={100} className="nav-link">
                 <b>Home</b>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="about" smooth={true} duration={1000} className="nav-link">
+              <Link to="about" smooth={true} duration={100} className="nav-link">
                 <b>About Me</b>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="workex" smooth={true} duration={1000} className="nav-link">
+              <Link to="workex" smooth={true} duration={100} className="nav-link">
                 <b>Experience</b>
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="contact" smooth={true} duration={1000}  className="nav-link">
+              <Link to="contact" smooth={true} duration={100}  className="nav-link">
                 <b>Contact Me</b>
               </Link>
             </li>
