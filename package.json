@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "homepage": "https://<Username>.github.io/<Repository-name>",
   "scripts": {
     "predeploy": "npm run build",
