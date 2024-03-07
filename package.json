@@ -2,11 +2,10 @@
   "name": "portfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
-  "homepage": "https://<Username>.github.io/<Repository-name>",
+  "homepage": "https://manujharit.github.io/portfolio/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
