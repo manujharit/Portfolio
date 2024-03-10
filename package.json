@@ -5,7 +5,7 @@
   "homepage": "https://manujharit.github.io/portfolio/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "git checkout -b host || git checkout host && git rm -r . && git checkout master -- dist/* && mv -f dist/* . && rm -rf dist && git add . && git commit -m 'Copy dist files to host branch' && git push origin host && git checkout master",
+    "deploy": "gh-pages -d dist",
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest"
