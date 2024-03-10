@@ -1,3 +1,6 @@
+import LINKS from "../content/links";
+
+const { LINKEDIN, GMAIL, GITHUB } = LINKS;
 
 const ContactMe = () => {
   const divStyle = {
@@ -44,30 +47,20 @@ const ContactMe = () => {
           <br />
           <div class="container">
             <div class="row">
-
+              <div className="col-md-2 col-xs-2" style={{ width: '20%' }}></div>
               <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
-                <a href="https://www.linkedin.com/in/manuj-haritwal" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" class="btn btn-primary">
                   <i class="fab fa-linkedin me-10"></i>
                 </a>
               </div>
               <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
-                <a href="mailto:manuj.haritwal01@gmail.com" target="_blank" rel="noopener noreferrer" class="btn btn-danger">
+                <a href={GMAIL} target="_blank" rel="noopener noreferrer" class="btn btn-danger">
                   <i class="fas fa-envelope me-10"></i>
                 </a>
               </div>
               <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
-                <a href="https://github.com/manujharit" target="_blank" rel="noopener noreferrer" class="btn btn-dark">
+                <a href={GITHUB} target="_blank" rel="noopener noreferrer" class="btn btn-dark">
                   <i class="fab fa-github me-10"></i>
-                </a>
-              </div>
-              <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
-                <a href="https://twitter.com/ManujHarit" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
-                  <i class="fab fa-twitter me-10"></i>
-                </a>
-              </div>
-              <div class="col-md-2 col-xs-2" style={{ width: '20%' }}>
-                <a href="https://www.instagram.com/manuj_haritwal" target="_blank" rel="noopener noreferrer" class="btn btn-info">
-                  <i class="fab fa-instagram me-10"></i>
                 </a>
               </div>
             </div>

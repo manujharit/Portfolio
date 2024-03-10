@@ -1,4 +1,5 @@
 import backImg from "../../assets/backImg.svg";
+import workExData from "../content/workExData.js"
 
 const WorkEx = () => {
   const divStyle = {
@@ -7,6 +8,7 @@ const WorkEx = () => {
     width: "100%",
     padding: '5%'
   };
+
   return (
     <div id="workex">
       <div
@@ -48,283 +50,68 @@ const WorkEx = () => {
           </div>
           <br />
           <br />
-          <div className="row justify-content-center">
-            <div className="col-md-3 mb-2">
-              <h5
-                className="card-title"
-                style={{ fontWeight: "800", fontSize: "120%", color: '#7843e9' }}
-              >
-                Senior Systems Engineer
-              </h5>
-              <p
-                className="card-text"
-                style={{ fontWeight: "700", fontSize: "100%" }}
-              >
-                Infosys Limited
-                <br />
-                Oct, 2022 - Present
-                <br />
-              </p>
-            </div>
-            <div className="col-md-8 mb-5">
-              <div
-                className="card"
-                style={{
-                  height: "100%",
-                  boxShadow: "0 4px 8px 0 rgba(120, 67, 233, 2)",
-                }}
-              >
-                <div className="card-body">
-
+          {workExData.map((data) => {
+            return (
+              <div className="row justify-content-center">
+                <div className="col-md-3 mb-2">
+                  <h5
+                    className="card-title"
+                    style={{ fontWeight: "800", fontSize: "120%", color: '#7843e9' }}
+                  >
+                    {data.position}
+                  </h5>
                   <p
                     className="card-text"
-                    style={{ fontWeight: "500", fontSize: "80%" }}
+                    style={{ fontWeight: "700", fontSize: "100%" }}
                   >
-                    <ul>
-                      <li>
-                        Developed an Azure function that updates all users' Workplace by Facebook profiles when it receives a Service Bus message.
-                      </li>
-                      <li>
-                        Developed a web application that helps the client's team address application tickets more quickly by saving 75% of the analysis time.
-                      </li>
-                      <li>
-                        Delivered effective solutions and enhancements to decrease multiple issues in client applications, resulting in an 80% reduction in anomalies.
-                      </li>
-                      <li>
-                        Developed various dashboards and alerts to detect anomalies in apps in order to track the health metrics of multiple services and where necessary, implement immediate remedial action.
-                      </li>
-                      <li>
-                        Maintained various microservices and provided post-production support for a variety of client applications.
-                      </li>
-                    </ul>
-                    <p>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Javascript
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Node.js
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        ReactJS
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Redux
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Redis Cache
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Java
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        MySQL
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Azure (beginner)
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        MongoDB
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        SCRUM
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Service Bus
-                      </span>
-                    </p>
+                    {data.company}
+                    <br />
+                    {data.duration}
+                    <br />
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-md-3 mb-2">
-              <h5
-                className="card-title"
-                style={{ fontWeight: "800", fontSize: "120%", color: '#7843e9' }}
-              >
-                Systems Engineer
-              </h5>
-              <p
-                className="card-text"
-                style={{ fontWeight: "700", fontSize: "100%" }}
-              >
-                Infosys Limited
-                <br />
-                Jul, 2021 - Oct, 2022
-                <br />
-              </p>
-            </div>
-            <div className="col-md-8 mb-5">
-              <div
-                className="card"
-                style={{
-                  height: "100%",
-                  boxShadow: "0 4px 8px 0 rgba(120, 67, 233, 2)",
-                }}
-              >
-                <div className="card-body">
-
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "500", fontSize: "80%" }}
+                <div className="col-md-8 mb-5">
+                  <div
+                    className="card"
+                    style={{
+                      height: "100%",
+                      boxShadow: "0 4px 8px 0 rgba(120, 67, 233, 2)",
+                    }}
                   >
-                    <ul>
-                      <li>
-                        Investigated and developed software enhancements for the applications to accurately track failures with the relevant response codes that reduced the undefined errors by 60%.
-                      </li>
-                      <li>
-                        Maintained multiple microservices and provided post-production support as part of a horizontal team for the client.
-                      </li>
-                    </ul>
-                    <p>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                    <div className="card-body">
+
+                      <p
+                        className="card-text"
+                        style={{ fontWeight: "500", fontSize: "80%" }}
                       >
-                        Javascript
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Node.js
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        ReactJS
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Azure (beginner)
-                      </span>
-                    </p>
-                  </p>
+                        <ul>
+                          {
+                            data.description.map((desc) => {
+                              return <li>
+                                {desc}
+                              </li>
+                            })
+                          }
+                        </ul>
+                        <p>
+                          {
+                            data.skills.map((skill) => {
+                              return <span
+                                className="badge text-light me-2 mb-2"
+                                style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
+                              >
+                                {skill}
+                              </span>
+                            })
+                          }
+                        </p>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-md-3 mb-2">
-              <h5
-                className="card-title"
-                style={{ fontWeight: "800", fontSize: "120%", color: '#7843e9' }}
-              >
-                Systems Engineer Trainee
-              </h5>
-              <p
-                className="card-text"
-                style={{ fontWeight: "700", fontSize: "100%" }}
-              >
-                Infosys Limited
-                <br />
-                Oct, 2022 - Present
-                <br />
-              </p>
-            </div>
-            <div className="col-md-8 mb-5">
-              <div
-                className="card"
-                style={{
-                  height: "100%",
-                  boxShadow: "0 4px 8px 0 rgba(120, 67, 233, 2)",
-                }}
-              >
-                <div className="card-body">
-
-                  <p
-                    className="card-text"
-                    style={{ fontWeight: "500", fontSize: "80%" }}
-                  >
-                    <ul>
-                      <li>
-                        Trained on Spring Boot using Java, HTML, CSS, Bootstrap, JavaScript, ReactJS with some guided projects.
-                      </li>
-                      <li>
-                        Developed an internship project with a group of six people, and guided the group by distributing tasks and enforcing correct Agile methodology principles.
-                      </li>
-                    </ul>
-                    <p>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Javascript
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Springboot Application
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        ReactJS
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        Java
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        MySQL
-                      </span>
-                      <span
-                        className="badge text-light me-2 mb-2"
-                        style={{ backgroundColor: "#7843e9", fontSize: "100%" }}
-                      >
-                        SCRUM
-                      </span>
-                    </p>
-
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+            )
+          })}
         </div>
       </div>
     </div>

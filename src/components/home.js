@@ -1,23 +1,27 @@
 import backImg from "../../assets/backImg.svg";
+import LINKS from "../content/links";
 
+const {RESUME} = LINKS
 const Home = () => {
+  
   const divStyle = {
     background: `linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(${backImg})`,
     height: "100vh",
     width: "100%",
   };
+
   const nameStyle = { fontWeight: "800", fontSize: "6vh" };
+
   const contentStyle = {
     fontWeight: "200",
     fontSize: "2vh",
     margin: "0px 10vh",
   };
-  const openResume = () => {
-    const url = 'https://drive.google.com/file/d/1cyDo_COYsK99yu5TTV80LgdYt6NpgAq0/view?usp=drive_link';
 
-    // Open the URL in a new tab
-    window.open(url, '_blank');
+  const openResume = () => {
+    window.open(RESUME, '_blank');
   }
+  
   return (
     <div>
       <div
@@ -35,7 +39,7 @@ const Home = () => {
           <button
             className="btn btn-dark"
             style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-            onClick={()=>openResume()}
+            onClick={() => openResume()}
           >
             <b>Resume</b>
           </button>

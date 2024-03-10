@@ -1,9 +1,14 @@
+import { Link, animateScroll as scroll } from "react-scroll";
+
+import aboutData from "../content/aboutData";
+
 const About = () => {
   const divStyle = {
     height: "100%",
     width: "100%",
     padding: '7%'
   };
+
   return (
     <div id="about">
       <div
@@ -37,7 +42,7 @@ const About = () => {
               style={{
                 fontWeight: "300",
                 fontSize: "2vh",
-                margin: "0px 10vh",
+                margin: "0px 5vh",
               }}
             >
               Here you will find more information about me, what I do, and my
@@ -73,6 +78,17 @@ const About = () => {
                 grow. If you have a good opportunity that matches my skills and
                 experience then don't hesitate to <b>contact me</b>.
               </p>
+              <br />
+              <p className="text-center">
+                <button
+                  className="btn btn-dark"
+                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
+                >
+                  <Link to="contact" smooth={true} duration={100} className="nav-link">
+                    <b>Contact Me</b>
+                  </Link>
+                </button></p>
+              <br />
             </div>
             <div className="col-md-1"></div>
             <div className="col-md-4">
@@ -81,78 +97,14 @@ const About = () => {
                 className="mb-3"
                 style={{ fontWeight: "400", fontSize: "150%" }}
               >
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  HTML
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  CSS
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  Bootstrap
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  JavaScript
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  Java
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  ReactJS
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  Node.js
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  SpringBoot
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  MySQL
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  MongoDB
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  MS Azure
-                </span>
-                <span
-                  className="badge text-light me-2"
-                  style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
-                >
-                  Git
-                </span>
+                {aboutData.skills.map((skill) => {
+                  return <span
+                    className="badge text-light me-2"
+                    style={{ backgroundColor: "#7843e9", fontSize: "2vh" }}
+                  >
+                    {skill}
+                  </span>
+                })}
               </div>
             </div>
             <div className="col-md-1"></div>
