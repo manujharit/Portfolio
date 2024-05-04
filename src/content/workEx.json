@@ -1,0 +1,77 @@
+{
+    "technicalSkills": [
+        {
+            "id": "Languages & Frameworks",
+            "skills": [
+                "Java",
+                "JavaScript",
+                "TypeScript",
+                "Tailwind CSS",
+                "Bootstrap",
+                "ReactJS",
+                "Redux",
+                "Node.js",
+                "Express.js"
+            ]
+        },
+        {
+            "id": "Databases & Cloud",
+            "skills": [
+                "MySQL",
+                "MongoDB",
+                "Microsoft Azure",
+                "Azure Functions",
+                "Service Bus",
+                "Redis Cache"
+            ]
+        },
+        {
+            "id": "Tools & Methodologies",
+            "skills": [
+                "Git",
+                "REST API",
+                "Agile",
+                "SCRUM",
+                "JIRA",
+                "Postman"
+            ]
+        }
+    ],
+    "workExperience": [
+        {
+            "id": "1",
+            "duration": "JULY, 2021 - PRESENT",
+            "position": "Senior Systems Engineer",
+            "company": "Infosys Ltd",
+            "companyUrl": "https://www.infosys.com/",
+            "location": "Jaipur, India",
+            "detailedDescription": "I spearheaded transformative projects aimed at optimizing workflows and enhancing performance. Notably, I designed and developed an Azure function to automate Starbucks Partner’s Workplace profile updates via Service Bus integration, reducing manual intervention and optimizing operational workflows. I also developed a cutting-edge web application that streamlined ticket resolution, reducing analysis time by 80%. Additionally, I ensured seamless operation of critical applications across Starbucks locations in North America and implemented performance optimizations that reduced failures and boosted overall performance. My collaborative efforts with cross-functional teams drove technological advancements, consistently delivering value to Starbucks and its customers.",
+            "skills":[
+                "JavaScript",
+                "TypeScript",
+                "ReactJS",
+                "Redux",
+                "MongoDB",
+                "Node.js",
+                "Serverless Function",
+                "Microsoft Azure"
+            ]
+        },
+        {
+            "id": "2",
+            "duration": "FEB, 2021 - MAY, 2021",
+            "position": "Systems Engineer Trainee",
+            "company": "Infosys Ltd",
+            "companyUrl": "https://www.infosys.com/",
+            "location": "Mysuru, India",
+            "detailedDescription": "Developed a web application for tracking task progress in Agile projects, enabling task creation, progress updates, and tracking through dashboards using ReactJS and Redux. Engineered a robust Java Spring Boot application to handle API management and secure data storage, guaranteeing data integrity and reliable functionality. Architected and implemented a highly optimized MySQL database schema, ensuring efficient data storage and retrieval for enhanced application performance.",
+            "skills":[
+                "JavaScript",
+                "ReactJS",
+                "SpringBoot",
+                "MySQL",
+                "SCRUM"
+            ]
+        }
+    ]
+}

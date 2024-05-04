@@ -1,17 +1,10 @@
+
 const Footer = () => {
   return (
-    <footer className="bg-dark text-light py-4">
-      <div className="container">
-        <div className="row mt-3">
-          <div className="col-md-12">
-            <p className="text-center">
-              © Copyright 2024. Made by <u>Manuj Haritwal</u>
-            </p>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <div className="flex justify-center mt-20 mb-5 text-sm text-gray-500">
+        Designed & Build by Manuj Haritwal
+    </div>
   )
 }
 
-export default Footer;
+export default Footer

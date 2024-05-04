@@ -1,20 +1,18 @@
 import React from "react";
-import Navbar from "./components/navbar";
-import Home from "./components/home";
-import About from "./components/about";
-import ContactMe from "./components/contactMe";
-import WorkEx from "./components/workExperience";
-import Footer from "./components/footer";
+import Introduction from "./components/Introduction";
+import Content from "./components/Content";
+import useScreenSize from "./hooks/useScreenSize";
 
 const App = () => {
+  const isMobileorTablet = useScreenSize()
   return (
-    <div id="home">
-      <Navbar />
-      <Home />
-      <About />
-      <WorkEx />
-      <ContactMe />
-      <Footer />
+    <div className="flex flex-wrap bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
+      <div className={isMobileorTablet ? "w-1/2" : "w-full"}>
+        <Introduction />
+      </div>
+      <div className={isMobileorTablet ? "w-1/2" : "w-full"}>
+        <Content />
+      </div>
     </div>
   );
 };
