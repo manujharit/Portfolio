@@ -1,9 +1,11 @@
 import LINKS from '../content/links'
+import useScreenSize from '../hooks/useScreenSize';
 import Navbar from './Navbar';;
 
 const { LINKEDIN, GMAIL, GITHUB, TWITTER, RESUME } = LINKS
 
 const Introduction = () => {
+    const isMobileorTablet = useScreenSize()
     return (
         <div className='relative sticky top-0'>
             <div className="flex flex-col justify-center lg:px-[25%] lg:py-[7%]  sm:px-[20%] px-[10%] py-[10%] lg:h-screen ">
@@ -16,7 +18,7 @@ const Introduction = () => {
                 <div className="mt-10 text-md py-2 font-bold text-center hover:underline hover:text-white">
                     <a href={RESUME} target="_blank" >View My Resume ↗</a>
                 </div>
-                <Navbar />
+                {isMobileorTablet?<Navbar />:''}
                 <div className='flex justify-between mt-16 px-[10%] text-white'>
                     <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="text-3xl text-blue-700 ">
                         <i className="fab fa-linkedin  me-auto rounded-lg "></i>

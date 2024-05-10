@@ -13,7 +13,6 @@ const AboutMe = () => {
           const halfViewportHeight = window.innerHeight / 2;
           const experienceSection = document.getElementById('About')
           const sectionTop = experienceSection.offsetTop
-          console.log(sectionTop < scrollPosition + halfViewportHeight)
     
           if (
             sectionTop < scrollPosition + halfViewportHeight
