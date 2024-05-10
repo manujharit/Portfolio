@@ -4,8 +4,9 @@ import Contact from "./Contact"
 import Footer from "./Footer"
 
 const Content = () => {
+
     return (
-        <div className="px-[10%] pt-[10%] pb-[5%]">
+        <div className="px-[10%] pt-[10%] pb-[5%]" id="About">
             <AboutMe />
             <WorkExperience />
             <Contact />

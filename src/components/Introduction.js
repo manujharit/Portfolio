@@ -1,24 +1,22 @@
 import LINKS from '../content/links'
-import useScreenSize from '../hooks/useScreenSize'
-import ManujPhoto from '../../assets/ManujPhoto.jpeg'
+import Navbar from './Navbar';;
 
 const { LINKEDIN, GMAIL, GITHUB, TWITTER, RESUME } = LINKS
 
 const Introduction = () => {
-    const isMobileOrTablet = useScreenSize()
     return (
         <div className='relative sticky top-0'>
-            <div className="flex flex-col justify-center lg:px-[25%] lg:py-[7%] sm:px-[20%] px-[10%] py-[10%] lg:h-screen ">
-                <div className='flex flex-col items-center text-gray-400'>
-                    <img src={ManujPhoto} className='w-44 rounded-full' />
+            <div className="flex flex-col justify-center lg:px-[25%] lg:py-[7%]  sm:px-[20%] px-[10%] py-[10%] lg:h-screen ">
+                <div className='flex flex-col items-start text-gray-400'>
                     <span className="font-bold text-2xl lg:text-5xl py-2 ">Manuj Haritwal</span>
                     <span className='font-semibold text-lg lg:text-2xl py-2 '>Full Stack Developer</span>
                     <span className='flex flex-wrap text-justify text-sm lg:text-md py-2 '>Accomplished Full Stack Developer with over 3 years of professional experience in developing robust and scalable web
                         applications.</span>
                 </div>
-                <div className="mt-10 text-md font-bold text-center hover:underline hover:text-white">
-                    <a href={RESUME} target="_blank" className="arrow-link">View My Resume ↗</a>
+                <div className="mt-10 text-md py-2 font-bold text-center hover:underline hover:text-white">
+                    <a href={RESUME} target="_blank" >View My Resume ↗</a>
                 </div>
+                <Navbar />
                 <div className='flex justify-between mt-16 px-[10%] text-white'>
                     <a href={LINKEDIN} target="_blank" rel="noopener noreferrer" className="text-3xl text-blue-700 ">
                         <i className="fab fa-linkedin  me-auto rounded-lg "></i>

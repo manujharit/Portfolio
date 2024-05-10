@@ -45,8 +45,26 @@
             "company": "Infosys Ltd",
             "companyUrl": "https://www.infosys.com/",
             "location": "Jaipur, India",
-            "detailedDescription": "I spearheaded transformative projects aimed at optimizing workflows and enhancing performance. Notably, I designed and developed an Azure function to automate Starbucks Partner’s Workplace profile updates via Service Bus integration, reducing manual intervention and optimizing operational workflows. I also developed a cutting-edge web application that streamlined ticket resolution, reducing analysis time by 80%. Additionally, I ensured seamless operation of critical applications across Starbucks locations in North America and implemented performance optimizations that reduced failures and boosted overall performance. My collaborative efforts with cross-functional teams drove technological advancements, consistently delivering value to Starbucks and its customers.",
-            "skills":[
+            "detailedDescription": [
+                {
+                    "topic": "Notable Work",
+                    "description": "Designed and developed an Azure function to automate all employees’s Workplace profile updates via Service Bus integration, optimizing operational workflows."
+                },
+                {
+                    "topic": "Accelerated Application Ticket Resolution",
+                    "description": "Developed a web application that significantly accelerated application ticket resolution for the client’s team, reducing analysis time by 80%."
+                },
+                {
+                    "topic": "Application Maintenance",
+                    "description": "Ensured seamless operation and maintained high availability of client applications across all locations in North America, proactively identifying and resolving issues."
+                },
+                {   
+                    "topic" : "Performance Optimization",
+                    "description":"Optimized Azure Functions by implementing performance enhancements and exception handling mechanisms, resulting in improved execution speed and reduced failures."
+                    
+                }
+            ],
+            "skills": [
                 "JavaScript",
                 "TypeScript",
                 "ReactJS",
@@ -64,8 +82,21 @@
             "company": "Infosys Ltd",
             "companyUrl": "https://www.infosys.com/",
             "location": "Mysuru, India",
-            "detailedDescription": "Developed a web application for tracking task progress in Agile projects, enabling task creation, progress updates, and tracking through dashboards using ReactJS and Redux. Engineered a robust Java Spring Boot application to handle API management and secure data storage, guaranteeing data integrity and reliable functionality. Architected and implemented a highly optimized MySQL database schema, ensuring efficient data storage and retrieval for enhanced application performance.",
-            "skills":[
+            "detailedDescription": [
+                {
+                    "topic": "Agile DevOps Monitoring",
+                    "description" : "Developed a web application for tracking task progress in Agile projects, enabling task creation, progress updates, and tracking through dashboards"
+                },
+                {
+                    "topic" : "Database Architecture",
+                    "description" : "Architected and implemented a highly optimized MySQL database schema, ensuring efficient data storage and retrieval for enhanced application performance."
+                },
+                {
+                    "topic" : "API Management",
+                    "description": "Engineered a robust Java Spring Boot application to handle API management and secure data storage, guaranteeing data integrity and reliable functionality."
+                }
+            ],
+            "skills": [
                 "JavaScript",
                 "ReactJS",
                 "SpringBoot",

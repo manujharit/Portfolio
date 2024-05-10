@@ -1,12 +1,25 @@
-import ManujPhoto from '../../assets/ManujPhoto.jpeg'
-const Navbar = () => {
-    return (
-        <div className="sticky top-0 mb-10 py-2 flex items-center w-full border-b-2 border-teal-800 bg-slate-700 rounded-b-lg">
-            <img src={ManujPhoto} alt="Logo" className='w-[10%] rounded-full' />
-            <label className='text-xl font-bold text-teal-500 px-10'>MANUJ HARITWAL</label>
 
+import { useContext } from 'react';
+import { Link } from 'react-scroll';
+import ActiveSection from '../utils/ActiveSection';
+
+const Navbar = () => {
+    const {activeSection, setActiveSection} = useContext(ActiveSection)
+    return (
+        <div className={`mt-10 transition-opacity duration-700`}>
+            <ul>
+                <li className={activeSection === 'about' ? 'text-white text-xl' : 'text-md'}>
+                    <Link to='About' smooth={true} duration={500} onClick={() => setActiveSection('about')}>-- About</Link>
+                </li>
+                <li className={activeSection === 'experience' ? 'text-white text-xl' : 'text-md'}>
+                    <Link to="Experience" smooth={true} duration={500} onClick={() => setActiveSection('experience')}>-- Work Experience</Link>
+                </li>
+                <li className={activeSection === 'contact' ? 'text-white text-xl' : 'text-md'}>
+                    <Link to="Contact" smooth={true} duration={500} onClick={() => setActiveSection('contact')}>-- Contact Me</Link>
+                </li>
+            </ul>
         </div>
     )
 }
 
-export default Navbar
+export default Navbar;
