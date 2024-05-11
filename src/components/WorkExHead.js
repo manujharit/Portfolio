@@ -7,7 +7,7 @@ const WorkExHead = ({data}) => {
       {
         screenSize ? (
           <label className="text-left w-full text-lg font-bold mb-2 text-white">{data.position}</label>
-        ):(<a href={data.companyUrl} target="_blank" className="text-left w-full text-md font-bold mb-2 text-gray-100 underline">{data.position} 🡥 </a>
+        ):(<a href={data.companyUrl} target="_blank" className="text-left w-full text-md font-bold mb-2 text-gray-100 underline">{data.position} </a>
         )
       
         }
