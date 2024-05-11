@@ -1,7 +1,6 @@
 import LINKS from '../content/links'
 import useScreenSize from '../hooks/useScreenSize';
-import Navbar from './Navbar';import Socials from './Socials';
-;
+import Navbar from './Navbar';
 
 const { RESUME } = LINKS
 

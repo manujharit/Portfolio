@@ -1,6 +1,6 @@
 import LINKS from '../content/links'
 import useScreenSize from '../hooks/useScreenSize'
-const { LINKEDIN, GMAIL, GITHUB, TWITTER } = LINKS
+const { LINKEDIN, GITHUB, TWITTER } = LINKS
 const Socials = () => {
     const isnotMobileorTablet = useScreenSize()
 
