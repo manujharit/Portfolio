@@ -2,27 +2,29 @@ import React from 'react'
 import LINKS from '../content/links'
 import { useContext, useEffect } from 'react'
 import ActiveSection from '../utils/ActiveSection'
+import useScreenSize from '../hooks/useScreenSize'
 
 const { GMAIL } = LINKS
 
 const Contact = () => {
     const { setActiveSection } = useContext(ActiveSection)
+    const isnotMobileorTablet = useScreenSize()
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
             const halfViewportHeight = window.innerHeight / 2;
             const experienceSection = document.getElementById('Contact')
             const sectionTop = experienceSection.offsetTop
-
             if (
-                sectionTop < scrollPosition + halfViewportHeight
+                sectionTop < scrollPosition + halfViewportHeight + 50
             ) {
                 setActiveSection('contact');
             }
         };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        if (!isnotMobileorTablet) {
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }
     }, []);
     return (
         <div className='flex flex-col mt-10' id="Contact">

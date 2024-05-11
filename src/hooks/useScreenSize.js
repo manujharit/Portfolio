@@ -6,7 +6,7 @@ const useScreenSize = () => {
     useEffect(() => {
         const handleResize = () => {
             const { innerWidth } = window;
-            setIsMobileOrTablet(innerWidth > 1024); // Adjust this value based on your tablet breakpoint
+            setIsMobileOrTablet(innerWidth > 1366); // Adjust this value based on your tablet breakpoint
         };
 
         handleResize(); // Initial call to set the initial state

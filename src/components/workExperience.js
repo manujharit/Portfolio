@@ -3,11 +3,12 @@ import data from '../content/workEx.json'
 import WorkExCard from './WorkExCard'
 import { useContext, useEffect } from 'react'
 import ActiveSection from '../utils/ActiveSection'
+import useScreenSize from '../hooks/useScreenSize'
 
 const workExp = data.workExperience
 const WorkExperience = () => {
   const { setActiveSection } = useContext(ActiveSection)
-
+  const isnotMobileorTablet = useScreenSize()
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
@@ -22,8 +23,10 @@ const WorkExperience = () => {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    if (!isnotMobileorTablet) {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+  }
   }, []);
 
   return (

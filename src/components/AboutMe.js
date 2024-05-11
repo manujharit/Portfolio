@@ -3,27 +3,30 @@ import data from '../content/workEx.json'
 import Skills from "./skills"
 import ActiveSection from '../utils/ActiveSection'
 import { useEffect, useContext } from 'react'
+import useScreenSize from '../hooks/useScreenSize'
 const { technicalSkills } = data
 
 const AboutMe = () => {
     const { setActiveSection } = useContext(ActiveSection)
+    const isnotMobileorTablet = useScreenSize()
     useEffect(() => {
         const handleScroll = () => {
-          const scrollPosition = window.scrollY;
-          const halfViewportHeight = window.innerHeight / 2;
-          const experienceSection = document.getElementById('About')
-          const sectionTop = experienceSection.offsetTop
-    
-          if (
-            sectionTop < scrollPosition + halfViewportHeight
-          ) {
-            setActiveSection('about');
-          }
+            const scrollPosition = window.scrollY;
+            const halfViewportHeight = window.innerHeight / 2;
+            const experienceSection = document.getElementById('About')
+            const sectionTop = experienceSection.offsetTop
+
+            if (
+                sectionTop < scrollPosition + halfViewportHeight
+            ) {
+                setActiveSection('about');
+            }
         };
-    
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
+        if (!isnotMobileorTablet) {
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+        }
+    }, []);
     return (
         <div className="flex flex-col" >
             <p className="text-gray-400 text-justify text-sm lg:text-md">
@@ -41,7 +44,7 @@ const AboutMe = () => {
                 delivery.
                 <br />
                 <br />
-                
+
             </p>
             <label className="text-2xl font-bold mt-8 mb-2 text-white">SKILLS</label>
             <ul>

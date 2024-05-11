@@ -5,13 +5,9 @@ import WorkExDesc from "./WorkExDesc"
 
 const WorkExCard = ({ data }) => {
     const screenSize = useScreenSize()
-    const handleClick = () => {
-        if (screenSize) {
-            window.open(data.companyUrl, '_blank')
-        }
-    }
+
     return (
-        <div className=" w-[100%] my-2 lg:p-4 lg:hover:shadow-inner lg:hover:bg-slate-800 lg:hover:shadow-cyan-950 lg:hover:rounded-lg" onClick={handleClick}>
+        <div className=" w-[100%] my-2 lg:p-4 lg:hover:shadow-inner lg:hover:bg-slate-800 lg:hover:shadow-cyan-950 lg:hover:rounded-lg">
             <div className="flex  flex-col ">
                 <div className="w-full ">
                     <label className="text-xs px-1">{data.duration}</label>
