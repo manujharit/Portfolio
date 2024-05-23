@@ -1,28 +1,17 @@
 import React from "react";
-import Introduction from "./components/Introduction";
-import Content from "./components/Content";
-import useScreenSize from "./hooks/useScreenSize";
-import ActiveSection from "./utils/ActiveSection";
-import { useState } from "react";
-import Socials from "./components/Socials";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 const App = () => {
-  const isnotMobileorTablet = useScreenSize()
-  const [activeSection, setActiveSection] = useState('about')
-
-
   return (
-    <ActiveSection.Provider value={{ activeSection: activeSection, setActiveSection: setActiveSection }}>
-      <div className="flex flex-wrap bg-slate-900 leading-relaxed text-slate-400 antialiased selection:bg-teal-300 selection:text-teal-900">
-      <Socials/>
-        <div className={isnotMobileorTablet ? "w-1/2" : "w-full"}>
-          <Introduction />
-        </div>
-        <div className={isnotMobileorTablet ? "w-1/2" : "w-full"}>
-          <Content />
-        </div>
+    <div className="flex flex-col text-slate-400  h-screen ">
+      <div className="mx-[25%]">
+      <Navbar />
+      <Home />
+      <Footer/>
       </div>
-    </ActiveSection.Provider>
+    </div>
   );
 };
 

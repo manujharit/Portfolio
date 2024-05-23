@@ -6,7 +6,7 @@
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
-    "start": "parcel index.html",
+    "start": "parcel index.html --port 4000 --no-cache",
     "build": "parcel build index.html",
     "test": "jest"
   },
@@ -16,7 +16,7 @@
     "gh-pages": "^6.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-scroll": "^1.9.0"
+    "react-router-dom": "^6.23.1"
   },
   "devDependencies": {
     "buffer": "^6.0.3",
