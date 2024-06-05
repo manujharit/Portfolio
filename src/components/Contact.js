@@ -1,39 +1,26 @@
-import React from 'react'
-import LINKS from '../content/links'
-import { useContext, useEffect } from 'react'
-import ActiveSection from '../utils/ActiveSection'
-import useScreenSize from '../hooks/useScreenSize'
+import { CDN_URL, LINKEDIN,TWITTER } from "../configs/configs"
 
-const { GMAIL } = LINKS
 
 const Contact = () => {
-    const { setActiveSection } = useContext(ActiveSection)
-    const isnotMobileorTablet = useScreenSize()
-    useEffect(() => {
-        const handleScroll = () => {
-            const scrollPosition = window.scrollY;
-            const halfViewportHeight = window.innerHeight / 2;
-            const experienceSection = document.getElementById('Contact')
-            const sectionTop = experienceSection.offsetTop
-            if (
-                sectionTop < scrollPosition + halfViewportHeight + 50
-            ) {
-                setActiveSection('contact');
-            }
-        };
-        if (!isnotMobileorTablet) {
-            window.addEventListener('scroll', handleScroll);
-            return () => window.removeEventListener('scroll', handleScroll);
-        }
-    }, []);
+    const data = [
+        { id: 0, user: 'Manuj Haritwal', imageId: 'eub6rgmsq4ngfuw3o9cr.png', class: 'text-blue-700 font-bold mb-[10px]', link:LINKEDIN },
+        { id: 2, user: 'ManujHarit', imageId: 'eep30q9hzpuppql0tleu.png', class: 'text-black font-bold mb-[10px]', link:TWITTER },
+    ]
     return (
-        <div className='flex flex-col mt-10' id="Contact">
-            <label className='text-left w-[full] text-2xl font-bold my-4 text-white'>GET IN TOUCH</label>
-            <label className='text-justify w-[full] text-sm text-gray-400'>I'm actively seeking job opportunities where I can make a meaningful impact, expand my knowledge, and develop professionally. If you have a fitting opportunity aligned with my skills and background, feel free to reach out. My inbox is readily available for any inquiries or even just a friendly greeting — I'll do my utmost to respond promptly!</label>
-            <div className='flex justify-center items-center my-10'>
-                <a href={GMAIL} className='text-center text-bold text-teal-500 bg-slate-900 py-3 px-5 mt-4 border border-solid border-teal-500 rounded-md hover:bg-slate-800'>Contact Me</a>
+        <div className="border flex flex-row rounded-3xl drop-shadow-md shadow-md shadow-gray-400 bg-blue-50 h-[350px] px-[7%] py-[10%]">
+            <div className=" flex flex-col w-[60%]">
+                <span className="font-bold text-3xl text-blue-600 mb-[3%]">Say hi!</span>
+                <span className="text-justify text-lg mb-[5%]">
+                    If you have any queries or would like to discuss potential opportunities, please don't hesitate to reach out to me using given links.
+                </span>
+                <div className="flex flex-row">
+                    {data.map(social => <a href={social.link} target='_blank' key={social.id} className="flex flex-col items-center text-center md:items-start md:justify-center md:flex-row mx-[1%]" ><img src={CDN_URL + social.imageId} className="w-[20px] h-[20px] rounded-md mx-[5px]" /><span className={social.class}>{social.user}</span></a>)}
+                </div>
             </div>
-        </div>
+            <div className="w-[40%] ml-[2%]">
+                <img src={CDN_URL + 'inxtwky8wrvpzapufasa.png'} />
+            </div>
+        </div>  
     )
 }
 
