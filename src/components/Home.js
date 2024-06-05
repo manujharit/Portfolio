@@ -5,7 +5,7 @@ import { CDN_URL, LINKEDIN, AVATAR } from '../configs/configs'
 
 const Home = () => {
     return (
-        <div className="flex flex-col mt-[12%] text-black px-[2%] pt-[5%] font-serif">
+        <div className="flex flex-col mt-[15%] md:mt-[12%] text-black px-[2%] pt-[5%] font-serif">
             <div className="flex flex-row mb-[5%]">
                 <div>
                     <img src={CDN_URL + AVATAR} className="h-[100px] w-[100px]" />

@@ -52,7 +52,7 @@ const WorkExperience = () => {
         }
     ];
     return (
-        <div className="mt-[12%] flex flex-col justify-center items-center">
+        <div className="mt-[15%] md:mt-[12%] flex flex-col justify-center items-center">
             <PageHeading head="Timeline"/>
             <span className="text-center text-gray-500 mx-[10%] mb-10">The linear view of some milestones and notable moments that happened so far. And you can always find more information on LinkedIn.</span>
             <ol className="relative border-s border-gray-200 dark:border-gray-700 mt-[5%] mx-[5%]">
@@ -78,12 +78,12 @@ const WorkExperience = () => {
                             )}
                         </h3>
 
-                        <p className="text-gray-500"> {item.org} | <time className=" mb-2 text-sm font-normal leading-none text-gray-400 ">
-                            {item.duration}
+                        <p className="text-sm text-gray-500 font-semibold"> {item.org}  <time className=" mb-2 text-sm font-normal leading-none text-gray-400 ">
+                        | {item.duration}
                         </time></p>
                         <div className="mt-4">
                             <ul>
-                                {item.desc.map(desc => <WorkExDesc desc={desc} />)}
+                                {item.desc.map(desc => <WorkExDesc key={desc.topic} desc={desc} />)}
                             </ul>
                         </div>
                         <div className="flex flex-wrap mt-4">

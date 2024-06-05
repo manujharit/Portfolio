@@ -1,13 +1,14 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 
 import App from "./src/App.js";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import WorkExperience from "./src/components/WorkExperience.js";
-import Home from "./src/components/Home.js";
-import About from "./src/components/About.js";
-import Tech from "./src/components/Tech.js";
-import Work from "./src/components/Work.js";
+const WorkExperience = lazy(()=>import("./src/components/WorkExperience.js"));
+const Home = lazy(()=>import("./src/components/Home.js"));
+const About = lazy(()=> import("./src/components/About.js"));
+const Tech = lazy(()=> import("./src/components/Tech.js"));
+const Work = lazy(()=> import("./src/components/Work.js"));
+import PageShimmer from "./src/components/shimmer/PageShimmer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -17,23 +18,23 @@ const AppRouter = createBrowserRouter([{
   children: [
     {
       path: '/',
-      element: <Home />
+      element: <Suspense fallback={<PageShimmer/>}><Home /></Suspense>
     },
     {
       path: '/timeline',
-      element: <WorkExperience />
+      element: <Suspense fallback={<PageShimmer/>}><WorkExperience /></Suspense>
     },
     {
       path: '/work',
-      element: <Work />
+      element: <Suspense fallback={<PageShimmer/>}><Work /></Suspense>
     },
     {
       path: '/about',
-      element: <About />
+      element: <Suspense fallback={<PageShimmer/>}><About /></Suspense>
     },
     {
       path: '/tech',
-      element: <Tech />
+      element: <Suspense fallback={<PageShimmer/>}><Tech /></Suspense>
     }
   ]
 }])

@@ -7,7 +7,7 @@ import ImageShimmer from './shimmer/ImageShimmer'
 const About = () => {
     const skills=['HTML5', 'CSS3', 'JavaScript', 'TypeScript', 'ReactJS', 'Node.js', 'Redux.js', 'Express.js', 'Serverless Functions', 'Microsoft Azure']
   return (
-    <div className="mt-[12%] flex flex-col justify-center items-center mx-[5%]">
+    <div className="mt-[15%] md:mt-[12%] flex flex-col justify-center items-center mx-[5%]">
         <PageHeading head="About"/>
         <img src={ManujPhoto} className='my-5 h-[20%] w-[20%]' alt={<ImageShimmer/>} />
         <span className='text-gray-600 text-lg font-semibold pb-6 border-b-2 border-solid border-gray-300 w-[100%] text-center'>Little about me. Also, It's not that hard to find me.</span>
@@ -16,7 +16,7 @@ const About = () => {
         </p>
         <span className='text-gray-500 font-bold mt-5 text-2xl'>Skills</span>
         <div className='flex flex-wrap justify-center items-center'>
-            {skills.map(skill=><Skills skill={skill}/>)}
+            {skills.map(skill=><Skills key={skill} skill={skill}/>)}
         </div>
         <span className='text-gray-500 font-bold mt-5 text-2xl'>Contact</span>
         <p className='text-justify my-[2%] text-gray-700'>

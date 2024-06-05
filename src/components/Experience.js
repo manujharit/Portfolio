@@ -14,7 +14,7 @@ const Experience = () => {
                 <span className="text-2xl font-bold text-blue-900 mb-[2%]">Development</span>
                 <span className="mb-[15%]">Utilizing my full-stack proficiency with React.js and Node.js, I craft visually stunning web applications that prioritize intuitive navigation and user experience. My projects seamlessly combine aesthetic appeal with functional interfaces, each infused with a distinctive touch that elevates the digital experience to extraordinary levels.</span>
                 <span className="text-lg mb-[10%]">That was a short information about the domain that I have previously worked on. while you're at it, have a look at few chosen works that I have created using above domain.</span>
-                <Link to="/work" className="mx-[40%] w-[20%] shadow-sm hover:shadow-inner hover:border  bg-white rounded-xl  shadow-purple-700 border p-[1%] font-bold text-blue-700">Projects</Link>
+                <Link to="/work" className="mx-[40%] w-[20%] text-[80%] shadow-sm hover:shadow-inner hover:border  bg-white rounded-xl  shadow-purple-700 border p-[1%] font-bold text-blue-700">Projects</Link>
             </div>
         </div>
     )
