@@ -1,15 +1,14 @@
 import Contact from "./Contact"
 import Experience from "./Experience"
 
-import { CDN_URL, LINKEDIN } from '../configs/configs'
+import { CDN_URL, LINKEDIN, AVATAR } from '../configs/configs'
 
 const Home = () => {
-    const AvtaarURL = 'evpulqquc120j7mjez3k'
     return (
         <div className="flex flex-col mt-[12%] text-black px-[2%] pt-[5%] font-serif">
             <div className="flex flex-row mb-[5%]">
                 <div>
-                    <img src={CDN_URL + AvtaarURL} className="h-[100px] w-[100px]" />
+                    <img src={CDN_URL + AVATAR} className="h-[100px] w-[100px]" />
                 </div>
                 <div className="flex flex-col justify-end  mb-5 mx-[2%]">
                     <span className="text-black font-bold text-2xl">

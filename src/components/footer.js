@@ -10,7 +10,7 @@ const Footer = () => {
     ]
     return (
         <div className="flex flex-col justify-center items-center my-[10%]">
-            <div className='border-b-2 border-gray-300 w-[100%] mb-[5%]'></div>
+            <div className='border-b-2 border-gray-300 w-[95%] mb-[5%]'></div>
             <div className='flex flex-row justify-between mx-[35%] mb-[5%]'>
                 {socials.map(social => <a key={social.id} href={social.link} className='w-[15%] h-[10%]' target="_blank"><img src={CDN_URL + social.imageId} className='rounded-xl ' /></a>)}
             </div>
