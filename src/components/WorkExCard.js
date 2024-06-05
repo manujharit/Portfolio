@@ -1,5 +1,5 @@
 import useScreenSize from "../hooks/useScreenSize"
-import Skills from "./skills"
+import Skills from "./Skills"
 import WorkExHead from "./WorkExHead"
 import WorkExDesc from "./WorkExDesc"
 

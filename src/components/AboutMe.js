@@ -1,6 +1,6 @@
 
 import data from '../content/workEx.json'
-import Skills from "./skills"
+import Skills from "./Skills"
 import ActiveSection from '../utils/ActiveSection'
 import { useEffect, useContext } from 'react'
 import useScreenSize from '../hooks/useScreenSize'
