@@ -26,7 +26,7 @@ const Navbar = () => {
     })
 
     return (
-        <div className='z-10 fixed top-0 flex items-center justify-between bg-opacity-50 bg-white/50 backdrop-blur-sm border  lg:my-[1%] px-[5%] w-[100%] md:w-[85%] lg:w-[80%] xl:w-[50%] md:rounded-2xl lg:rounded-2xl h-[7%] drop-shadow-md shadow-gray-700'>
+        <div className='z-10 fixed top-0  flex items-center justify-between bg-opacity-50 bg-white/50 backdrop-blur-sm border  lg:my-[1%] px-[5%] w-[100%] md:w-[85%] lg:w-[80%] xl:w-[50%] md:rounded-2xl lg:rounded-2xl h-[7%] drop-shadow-md shadow-gray-700'>
             <div className='flex justify-center w-[50%] md:w-[40%] lg:w-[40%] '>
                 <Link to='/' className='font-extrabold text-[150%] text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-violet-500'  onClick={handleLink}>{"</> MANUJ"}</Link>
             </div>
