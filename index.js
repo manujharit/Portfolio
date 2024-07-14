@@ -1,8 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
-
 import App from "./src/App.js";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
 const WorkExperience = lazy(()=>import("./src/components/WorkExperience.js"));
 const Home = lazy(()=>import("./src/components/Home.js"));
 const About = lazy(()=> import("./src/components/About.js"));
@@ -12,32 +11,41 @@ import PageShimmer from "./src/components/shimmer/PageShimmer.js";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+const AnimatedOutlet = () => {
+  const location = useLocation();
+  return (
+    <Suspense fallback={<PageShimmer/>}>
+      {React.cloneElement(<App />, { key: location.pathname })}
+    </Suspense>
+  );
+};
+
 const AppRouter = createBrowserRouter([{
   path: '/',
-  element: <App />,
+  element: <AnimatedOutlet />,
   children: [
     {
       path: '/',
-      element: <Suspense fallback={<PageShimmer/>}><Home /></Suspense>
+      element: <Home />
     },
     {
       path: '/timeline',
-      element: <Suspense fallback={<PageShimmer/>}><WorkExperience /></Suspense>
+      element: <WorkExperience />
     },
     {
       path: '/work',
-      element: <Suspense fallback={<PageShimmer/>}><Work /></Suspense>
+      element: <Work />
     },
     {
       path: '/about',
-      element: <Suspense fallback={<PageShimmer/>}><About /></Suspense>
+      element: <About />
     },
     {
       path: '/tech',
-      element: <Suspense fallback={<PageShimmer/>}><Tech /></Suspense>
+      element: <Tech />
     }
   ]
-}])
+}]);
 
 root.render(
   <React.StrictMode>

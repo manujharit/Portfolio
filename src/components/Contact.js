@@ -1,10 +1,10 @@
-import { CDN_URL, LINKEDIN,TWITTER } from "../configs/configs"
+import { CDN_URL, LINKEDIN, TWITTER } from "../configs/configs"
 
 
 const Contact = () => {
     const data = [
-        { id: 0, user: 'Manuj Haritwal', imageId: 'eub6rgmsq4ngfuw3o9cr.png', class: 'text-blue-700 font-bold mb-[10px]', link:LINKEDIN },
-        { id: 2, user: 'ManujHarit', imageId: 'eep30q9hzpuppql0tleu.png', class: 'text-black font-bold mb-[10px]', link:TWITTER },
+        { id: 0, user: 'Manuj Haritwal', imageId: 'eub6rgmsq4ngfuw3o9cr.png', class: 'text-blue-700 font-bold mb-[10px]', link: LINKEDIN },
+        { id: 2, user: 'ManujHarit', imageId: 'eep30q9hzpuppql0tleu.png', class: 'text-black font-bold mb-[10px]', link: TWITTER },
     ]
     return (
         <div className="border flex flex-row rounded-3xl drop-shadow-md shadow-md shadow-gray-400 bg-blue-50 h-[350px] px-[7%] py-[10%]">
@@ -20,7 +20,7 @@ const Contact = () => {
             <div className="hidden md:flex w-[40%] ml-[2%]">
                 <img src={CDN_URL + 'inxtwky8wrvpzapufasa.png'} />
             </div>
-        </div>  
+        </div>
     )
 }
 

@@ -1,21 +1,31 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import { Outlet } from "react-router-dom";
-
+import { Outlet, useLocation } from "react-router-dom";
+import { AnimatePresence, motion } from "framer-motion";
 
 const App = () => {
+  const location = useLocation();
+
   return (
     <div className="flex flex-col text-slate-400 h-screen">
-      <div className=" md:mx-16 lg:mx-[10%] xl:mx-[25%]">
+      <div className="md:mx-16 lg:mx-[10%] xl:mx-[25%]">
         <Navbar />
       </div>
-      
-      <div className="mx-2 md:mx-16 lg:mx-[10%] xl:mx-[25%]">
-        
-        <Outlet />
-        <Footer />
-      </div>
+
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={location.pathname}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.3 }}
+          className="mx-2 md:mx-16 lg:mx-[10%] xl:mx-[25%]"
+        >
+          <Outlet />
+          <Footer />
+        </motion.div>
+      </AnimatePresence>
     </div>
   );
 };
