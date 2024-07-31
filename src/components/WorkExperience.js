@@ -8,15 +8,19 @@ const WorkExperience = () => {
             title: "Technology Analyst",
             duration: "July 2021 - Present",
             org: "Infosys Ltd.",
-            skills: ["React.js", "Redux.js", "Node.js", "TypeScript", "Serverless Function", "Microsoft Azure", "MongoDB"],
+            skills: ["React.js", "Redux.js", "Node.js", "Express.js", "JavaScript", "TypeScript", "Serverless Function", "Microsoft Azure", "MongoDB", ],
             desc: [
                 {
-                    "topic": "Notable Work",
-                    "description": "Designed and developed an Azure function to automate all employees’s Workplace profile updates via Service Bus integration, optimizing operational workflows."
+                    "topic": "WorkplacePartnerProfileUpdateAzfn",
+                    "description": "Engineered an Azure function automating Starbucks' employee Workplace profile updates, integrating Service Bus for optimized operational workflows."
                 },
                 {
-                    "topic": "Accelerated Application Ticket Resolution",
+                    "topic": "PBPlays",
                     "description": "Developed a web application that significantly accelerated application ticket resolution for the client’s team, reducing analysis time by 80%."
+                },
+                {
+                    "topic" : "Starbucks Reserve ESB",
+                    "description": "Developed a responsive web component for the Starbucks' Reserve platform, utilizing React.js and RESTful APIs to dynamically render content showcasing the Empire State Building Roastery, while ensuring cross-browser compatibility and optimizing load times for an enhanced user experience."
                 },
                 {
                     "topic": "Application Maintenance",
